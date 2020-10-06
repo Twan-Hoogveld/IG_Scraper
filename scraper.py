@@ -22,6 +22,7 @@ if __name__ == '__main__':
 	try:
 		username = str(sys.argv[1])
 	except IndexError:
+		print("ERROR NO USERNAME GIVEN, TYPE: python scraper.py USERNAME")
 		exit()
 	driver.get("https://www.instagram.com/{}/".format(username))
 
